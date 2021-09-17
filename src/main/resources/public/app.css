@@ -1,0 +1,44 @@
+#top-section{
+    background-color: black;
+    color: white;
+    height: 70px;
+}
+
+.header{
+    margin-top:60px;
+    padding-top: 20px;
+    padding: 20px;
+
+}
+#content{
+    margin-top: 80px;
+    text-align:center;
+    padding: 15px;
+    font-family: arial;
+
+}
+#heading{
+
+}
+.btn{
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: grey;
+    color: white;
+}
+#list{
+    text-align:center;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin:auto;
+    margin-top: 395px;
+    height: 30px;
+    padding: 10px;
+}

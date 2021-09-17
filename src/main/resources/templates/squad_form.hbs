@@ -1,0 +1,48 @@
+{{!-- {{#partial "title" }} --}}
+{{!--   Create your squad --}}
+{{!-- {{/partial}} --}}
+
+{{!-- <!--form.hbs.--> --}}
+{{!-- {{#partial "content"}} --}}
+
+{{!-- <h3>Add squad </h3> --}}
+{{!-- <form action='/squad_list' method="post"> --}}
+{{!--  <div class="form-group"> --}}
+{{!--    <label for="squad-name">Name</label> --}}
+{{!--    <input id="squad-name" name="squad-name" class="form-control" type="text"> --}}
+{{!--  </div> --}}
+{{!--  <div class="form-group"> --}}
+{{!--    <label for="squad-size">Size</label> --}}
+{{!--    <input id="squad-size" name="squad-size" class="form-control" type="number"> --}}
+{{!--  </div> --}}
+{{!--  <div class="form-group"> --}}
+{{!--     <label for="squad-cause">Cause</label> --}}
+{{!--     <input id="squad-cause" name="squad-cause" class="form-control" type="text"> --}}
+{{!--   </div> --}}
+{{!--  <button type="submit" class="btn">Create Squad</button> --}}
+{{!-- </form> --}}
+
+
+{{!-- <!--form.hbs.--> --}}
+
+{{!-- {{/partial}} --}}
+{{#partial "content"}}
+     <section id = "top-section">
+       <h5><span class ="header">DARKWELL</span></h5>
+       </section>
+        <form class="form" action="/new/squad_list" method="post">
+            <h3>Create Your Squad</h3>
+            <p>Fill in the form below to create your squad</p>
+            <label for="squad-name">Squad Name:</label>
+            <input type="text" id="squad-name" placeholder=" squad name" name="squadName" required>
+            <label for="squad-size">Squad Size:</label>
+            <input type="number" id="squad-size" placeholder=" max size" name="size" required>
+            <label for="squad-cause">Squad Cause:</label>
+            <input type="text" id="squad-cause" placeholder=" cause" name="cause" required>
+            <input type="submit" class="btns">
+        </form>
+        <footer>
+              <p>TechInc 2021</p>
+         </footer>
+{{/partial}}
+{{> layout.hbs}}

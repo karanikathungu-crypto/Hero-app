@@ -1,0 +1,61 @@
+{{#partial "content"}}
+        <section id = "top-section">
+               <h5><span class ="header">DARKWELL</span></h5>
+         </section>
+        <div class="squad">
+            <div id="newMember">
+                <h2>Choose {{squadName}} Squad Members</h2>
+                {{#each members}}
+                    <div class="hero-item">
+                        <div class="hero-detail">
+                            <p>Name: {{userHero.name}}</p>
+                            <p>Super power: {{ userHero.power }}</p>
+                            <a class="btns" href="/squad/new/{{id}}">Add To Squad</a>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+             <h2>
+
+            <br><br>
+            {{#if squads}}
+                AVAILABLE SQUADS
+            </h2>
+                {{#each squads}}
+                    <div class="squad-cont">
+                        <img src="" alt="">
+                        <div>
+                            <h1>{{ squadName }} </h1>
+                            <p>Purpose: {{cause}}</p>
+                            <p>Max participants: {{ size }}</p>
+                            <br><br>
+                            <h3>MEMBERS</h3>
+                            <button class="addMember add-btn">Add Squad Member</button>
+                            <div class="member-cont">
+                                <h5>Name</h5>
+                                <Button class="btns">Remove</Button>
+                            </div>
+                            {{#each newSquadMember}}
+                                {{newSquadMember}}
+                                <div class="member-cont">
+                                    <h5>Name</h5>
+                                    <Button class="btns">Remove</Button>
+                                </div>
+                            {{/each}}
+
+
+                        </div>
+                    </div>
+                {{/each}}
+            {{else}}
+                <h2>Please create a squad to continue</h2>
+                <a class= 'btn' href="/squad_form">Create Squad</a>
+            {{/if}}
+        </div>
+
+    </section>
+    <footer>
+      <p>TechInc 2021</p>
+    </footer>
+{{/partial}}
+{{> layout.hbs}}

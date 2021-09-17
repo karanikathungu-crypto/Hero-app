@@ -1,0 +1,40 @@
+{{#partial "title" }}
+  Create your hero and assign a squad to them
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+ <section id = "top-section">
+   <h5><span class ="header">DARKWELL</span></h5>
+   </section>
+
+<h3>Add hero </h3>
+<form action="/new/hero_list" method="post">
+ <div class="form-group">
+   <label for="hero-name">Name</label>
+   <input id="hero-name" name="hero-name" class="form-control" type="text" required>
+ </div>
+ <div class="form-group">
+   <label for="hero-age">Age</label>
+   <input id="hero-age" name="hero-age" class="form-control" type="number" required>
+ </div>
+ <div class="form-group">
+    <label for="hero-power">Power</label>
+    <input id="hero-power" name="hero-power" class="form-control" type="text" required>
+  </div>
+  <div class="form-group">
+     <label for="hero-weakness">Weakness</label>
+     <input id="hero-weakness" name="hero-weakness" class="form-control" type="text" required>
+   </div>
+ <button type="submit" class="btn">Create Hero</button>
+</form>
+<footer>
+  <p>TechInc 2021</p>
+</footer>
+
+
+<!--form.hbs.-->
+
+{{/partial}}
+
+{{> layout.hbs}}

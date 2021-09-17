@@ -1,0 +1,33 @@
+
+
+
+{{#partial "content"}}
+    <section id = "top-section">
+       <h5><span class ="header">DARKWELL</span></h5>
+    </section>
+   <div class = "container">
+     <div class = "row">
+        <div class = "col-md-6" id="list">
+        <h3>Your Hero</h3>
+
+    {{!--     {{#if hero}} --}}
+            {{ userHero.name }}
+             <p>Created hero:</p>
+             <p>name:{{ userHero.name }}</p>
+             <p>age:{{ userHero.age }}</p>
+             <p>power:{{ userHero.power }}</p>
+             <p>weakness:{{ userHero.weakness}}</p>
+
+
+    {{!--     {{/else}} --}}
+    {{!--      <p>No heroes!</p> --}}
+    {{!--     {{/if}} --}}
+
+        <a class= 'btn' href="/">Go Back</a>
+   </div>
+   <footer>
+     <p>TechInc 2021</p>
+   </footer>
+{{/partial}}
+
+{{> layout.hbs}}
